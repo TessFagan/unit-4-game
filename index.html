@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+
+            <div class="gamename">
+                <h1>Crystal Collector</h1>
+            </div>
+        </nav>
+    </header>
+
+    <div class="clearfix"></div>
+
+    <section>
+        <div class="container-fluid" id="instructions">
+
+            <div class="row">
+                <div class="col-sm-12" style="color:#4aaaa5">
+                    <h2>Game Instructions</h2>
+                    <hr \>
+                    <p>Welcome to the Crystal Collector game! There are four crystals displayed as buttons on the page.
+                        * You will be shown a random number at the start of the game.
+                        * When the player clicks on a crystal, it will add a specific amount of points to the player's
+                        total score.
+                        * You won't know this amount until you click a crystal.
+                        * When you do click one, it will update the player's score counter.
+                        * You wins if the total score matches the random number from the beginning of the game.
+                        * You lose if their score goes above the random number.</p>
+                    <p>The game restarts again with a new random number whenever you win or lose. Also, all the crystals
+                        will have four new hidden values.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="container-fluid" id="winsloses">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Total Wins</h3>
+                    <p id="totalwins"></p>
+                    <h3>Total Losses</h3>
+                    <p id="totallosses"></p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Goal Number</h3>
+                    <p id="goalnumber"></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="container-fluid" id="crystals">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>Images here</p>
+                    <img src="../unit-4-game/./assets/./images/bluediamond.jpg" id="bluediamond">
+                    <img src="./assets/./images/./purplediamond.png" id="purplediamond">
+                    <img src="./assets/./images/./reddiamond.png" id="reddiamond">
+                    <img src="./assets/./images/./yellowdiamond.png" id="yellowdiamond">
+                </div>
+                <div class="col-sm-6">
+                    <h3>Total Score Here</h3>
+                    <p id="totalscore"></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../unit-4-game/assets/javascript/game.js"></script>
+
+</body>
+
+</html>
