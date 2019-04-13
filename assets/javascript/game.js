@@ -10,6 +10,8 @@ var totalWins = 0
 var totalLosses = 0
 var totalCurrentScore = 0
 
+// functions
+
 function gameRandomNumber() {
     var randomNumber = 18 + Math.floor(Math.random() * 102)
     console.log(randomNumber)
@@ -21,13 +23,11 @@ function crystalRandomNumber() {
     console.log(crystalRandomNumber)
 }
 
-gameRandomNumber()
-crystalRandomNumber()
-crystalRandomNumber()
-crystalRandomNumber()
-crystalRandomNumber()
+function setCrystalValue() {
 
-function calculateTotalCurrentScore() {
+}
+
+function score() {
     // sum of all buttons pressed
     // totalCurrentScore = x + y + z + q
     $("#totalscore").text(totalCurrentScore);
@@ -50,19 +50,35 @@ function scoreEqualsNumber() {
     }
 }
 
-function runGame() {
-    gameRandomNumber()
-    crystalRandomNumber()
-    totalCurrentScore()
-    scoreEqualsNumber()
-}
-
 function resetGame() {
     totalCurrentScore = 0
 }
 
+function runGame() {
+    gameRandomNumber()
+    crystalRandomNumber()
+    score()
+    scoreEqualsNumber()
+}
 
-$("#bluediamond").on("click", console.log("blueclicked"));
-$("#reddiamond").on("click", console.log("redclicked"));
-$("#purplediamond").on("click", console.log("purpleclicked"));
-$("#yellowdiamond").on("click", console.log("yellowclicked"));
+
+// buttons
+var blueDiamond = document.getElementById("bluediamond");
+blueDiamond.onclick = function () {
+    console.log("blueclicked");
+}
+
+var redDiamond = document.getElementById("reddiamond");
+redDiamond.onclick = function () {
+    console.log("redclicked");
+}
+
+var purpleDiamond = document.getElementById("purplediamond");
+purpleDiamond.onclick = function () {
+    console.log("purpleclicked");
+}
+
+var yellowDiamond = document.getElementById("yellowdiamond");
+yellowDiamond.onclick = function () {
+    console.log("yellowclicked");
+}
