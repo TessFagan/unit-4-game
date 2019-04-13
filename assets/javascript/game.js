@@ -113,7 +113,7 @@ function scoreEqualsNumber() {
         console.log("this is game Running: " + gameRunning);
     }
     else {
-        alert("keepgoing")
+        console.log("keepgoing!")
     }
 }
 
